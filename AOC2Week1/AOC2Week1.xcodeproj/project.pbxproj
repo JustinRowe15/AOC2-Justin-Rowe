@@ -24,6 +24,10 @@
 		0B6BA1A216C1F23E00702931 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6BA17A16C1F23E00702931 /* Foundation.framework */; };
 		0B6BA1AA16C1F23E00702931 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B6BA1A816C1F23E00702931 /* InfoPlist.strings */; };
 		0B6BA1AD16C1F23E00702931 /* AOC2Week1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6BA1AC16C1F23E00702931 /* AOC2Week1Tests.m */; };
+		0B6D5C6316C46C7100832E98 /* FighterAircraft.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6D5C6216C46C7100832E98 /* FighterAircraft.m */; };
+		0B6D5C6616C46C8300832E98 /* BomberAircraft.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6D5C6516C46C8300832E98 /* BomberAircraft.m */; };
+		0B6D5C6916C46C9B00832E98 /* TankerAircraft.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6D5C6816C46C9B00832E98 /* TankerAircraft.m */; };
+		0B6D5C6C16C46E2700832E98 /* AircraftBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6D5C6B16C46E2700832E98 /* AircraftBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,14 @@
 		0B6BA1A916C1F23E00702931 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0B6BA1AB16C1F23E00702931 /* AOC2Week1Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOC2Week1Tests.h; sourceTree = "<group>"; };
 		0B6BA1AC16C1F23E00702931 /* AOC2Week1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC2Week1Tests.m; sourceTree = "<group>"; };
+		0B6D5C6116C46C7100832E98 /* FighterAircraft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FighterAircraft.h; sourceTree = "<group>"; };
+		0B6D5C6216C46C7100832E98 /* FighterAircraft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FighterAircraft.m; sourceTree = "<group>"; };
+		0B6D5C6416C46C8300832E98 /* BomberAircraft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BomberAircraft.h; sourceTree = "<group>"; };
+		0B6D5C6516C46C8300832E98 /* BomberAircraft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BomberAircraft.m; sourceTree = "<group>"; };
+		0B6D5C6716C46C9A00832E98 /* TankerAircraft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TankerAircraft.h; sourceTree = "<group>"; };
+		0B6D5C6816C46C9B00832E98 /* TankerAircraft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankerAircraft.m; sourceTree = "<group>"; };
+		0B6D5C6A16C46E2700832E98 /* AircraftBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AircraftBase.h; sourceTree = "<group>"; };
+		0B6D5C6B16C46E2700832E98 /* AircraftBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AircraftBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +138,14 @@
 				0B6BA19616C1F23E00702931 /* ViewController.h */,
 				0B6BA19716C1F23E00702931 /* ViewController.m */,
 				0B6BA17F16C1F23E00702931 /* Supporting Files */,
+				0B6D5C6116C46C7100832E98 /* FighterAircraft.h */,
+				0B6D5C6216C46C7100832E98 /* FighterAircraft.m */,
+				0B6D5C6416C46C8300832E98 /* BomberAircraft.h */,
+				0B6D5C6516C46C8300832E98 /* BomberAircraft.m */,
+				0B6D5C6716C46C9A00832E98 /* TankerAircraft.h */,
+				0B6D5C6816C46C9B00832E98 /* TankerAircraft.m */,
+				0B6D5C6A16C46E2700832E98 /* AircraftBase.h */,
+				0B6D5C6B16C46E2700832E98 /* AircraftBase.m */,
 			);
 			path = AOC2Week1;
 			sourceTree = "<group>";
@@ -277,6 +297,10 @@
 				0B6BA18516C1F23E00702931 /* main.m in Sources */,
 				0B6BA18916C1F23E00702931 /* AppDelegate.m in Sources */,
 				0B6BA19816C1F23E00702931 /* ViewController.m in Sources */,
+				0B6D5C6316C46C7100832E98 /* FighterAircraft.m in Sources */,
+				0B6D5C6616C46C8300832E98 /* BomberAircraft.m in Sources */,
+				0B6D5C6916C46C9B00832E98 /* TankerAircraft.m in Sources */,
+				0B6D5C6C16C46E2700832E98 /* AircraftBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +485,7 @@
 				0B6BA1B216C1F23E00702931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B6BA1B316C1F23E00702931 /* Build configuration list for PBXNativeTarget "AOC2Week1Tests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +494,7 @@
 				0B6BA1B516C1F23E00702931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

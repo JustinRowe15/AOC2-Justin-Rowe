@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AircraftBase.h"
 
 @interface ViewController ()
 
