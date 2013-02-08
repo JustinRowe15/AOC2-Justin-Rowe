@@ -10,4 +10,12 @@
 
 @implementation AircraftBase
 
+-(void)aircraftAttributes:(NSString*)type pilotName:(NSString*)name homeBase:(NSString*)base fuelCapacity:(int)fuel;
+{
+    aircraftType = type;
+    pilotName = name;
+    homeBase = base;
+    fuelCapacity = fuel;
+}
+
 @end

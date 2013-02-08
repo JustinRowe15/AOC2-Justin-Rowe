@@ -9,5 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface AircraftBase : NSObject
+{
+    NSString * aircraftType;
+    NSString * pilotName;
+    NSString * homeBase;
+    int fuelCapacity;
+}
+
+-(void)aircraftAttributes:(NSString*)type pilotName:(NSString*)name homeBase:(NSString*)base fuelCapacity:(int)fuel;
 
 @end

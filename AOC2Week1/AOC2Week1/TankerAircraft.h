@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AircraftBase.h"
 
-@interface TankerAircraft : NSObject
+@interface TankerAircraft : AircraftBase
+
+@property int numberOfTankers;
+@property int tankerFlightTime;
+@property NSString * tankerPilotName;
 
 @end

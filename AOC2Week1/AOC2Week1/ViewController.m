@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "AircraftBase.h"
+#import "FighterAircraft.h"
+#import "BomberAircraft.h"
+#import "TankerAircraft.h"
 
 @interface ViewController ()
 
@@ -17,6 +20,11 @@
 
 - (void)viewDidLoad
 {
+    FighterAircraft * fighterAircraft = [[FighterAircraft alloc] init];
+    if (fighterAircraft != nil)
+    {
+        
+    }
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

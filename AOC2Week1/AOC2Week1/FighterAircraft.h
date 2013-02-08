@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AircraftBase.h"
 
-@interface FighterAircraft : NSObject
+@interface FighterAircraft : AircraftBase
+
+@property int numberOfFighters;
+@property int fighterFlightHours;
+@property NSString * fighterPilotName;
 
 @end

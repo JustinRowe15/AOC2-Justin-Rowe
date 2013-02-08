@@ -7,7 +7,17 @@
 //
 
 #import "BomberAircraft.h"
+#import "AircraftBase.h"
 
 @implementation BomberAircraft
+
+-(id)init
+{
+    if (self = [super init])
+    {
+        [self aircraftAttributes:@"B-2" pilotName:@"Captain Johnson" homeBase:@"Eagle Air Base" fuelCapacity:10000];
+    }
+    return self;
+}
 
 @end
