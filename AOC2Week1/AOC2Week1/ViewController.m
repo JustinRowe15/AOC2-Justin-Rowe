@@ -20,21 +20,33 @@
 
 - (void)viewDidLoad
 {
-    FighterAircraft * fighter = [[FighterAircraft alloc] init];
-    if (fighter != nil)
+    FighterAircraft * fighter = (FighterAircraft*)[AircraftFactory createAircraft:FIGHTER];
+    
+    if (fighter !=nil)
     {
-        [fighter displayAircraft];
-    }
-    BomberAircraft * bomber = [[BomberAircraft alloc] init];
-    if (bomber != nil)
+        [fighter setFighterType:F16];
+        [fighter setNumberOfBullets:20000];
+        [fighter setNumberOfBulletsFiredPerSecond:100];
+    };
+    
+    BomberAircraft * bomber = (BomberAircraft*)[AircraftFactory createAircraft:BOMBER];
+    
+    if (bomber !=nil)
     {
-        [bomber displayAircraft];
+        [bomber setNumberOfClusterBombs:200];
+        [bomber setNumberOfNuclearBombs:10];
+        [bomber setNumberOfBombRuns:20];
     }
-    TankerAircraft * tanker = [[TankerAircraft alloc] init];
-    if (tanker != nil)
+    
+    TankerAircraft * tanker = (TankerAircraft*)[AircraftFactory createAircraft:TANKER];
+    
+    if (tanker !=nil)
     {
-        [tanker displayAircraft];
+        [tanker setFuelCapacity:250000];
+        [tanker setNumberOfDistributedFuelGallons:25000];
+        [tanker setNumberOfRefuelCycles:25];
     }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

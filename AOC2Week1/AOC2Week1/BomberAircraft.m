@@ -27,7 +27,7 @@
 
 -(void)displayAircraft
 {
-    [self setNumberOfClusterBombs:(numberOfClusterBombs % numberOfBombRuns)];
+    [self setNumberOfClusterBombs:(numberOfClusterBombs / numberOfBombRuns)];
     [self setAircraftType:@"B-1"];
     NSLog(@"The %@ bomber will release %d of bombs per run.", self.aircraftType, self.numberOfClusterBombs);
 };

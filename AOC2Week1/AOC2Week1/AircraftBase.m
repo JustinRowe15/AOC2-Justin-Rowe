@@ -17,11 +17,11 @@
     self = [super init];
     if (self != nil)
     {
-        [self setAircraftType:nil];
-        [self setPilotName:nil];
-        [self setHomeBase:nil];
-        [self setFuelCapacity:nil];
-        [self setGallonsUsedPerHour:nil];
+        [self setAircraftType:@"A-10"];
+        [self setPilotName:@"Captain Jones"];
+        [self setHomeBase:@"Home Base"];
+        [self setFuelCapacity:10000];
+        [self setGallonsUsedPerHour:2000];
     }
     return self;
 };

@@ -12,7 +12,14 @@
 
 +(AircraftBase*)createAircraft: (int)aircraftModel;
 {
+    if (aircraftModel == FIGHTER) {
     return [[FighterAircraft alloc] init];
+    } else if (aircraftModel == BOMBER) {
+        return [[BomberAircraft alloc] init];
+    } else if (aircraftModel == TANKER) {
+        return [[TankerAircraft alloc] init];
+    }
+    else return nil;
 }
 
 @end
