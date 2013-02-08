@@ -11,8 +11,8 @@
 
 @interface BomberAircraft : AircraftBase
 
-@property int numberOfBombers;
-@property int bomberFlightHours;
-@property NSString * bomberPilotName;
+@property int numberOfClusterBombs;
+@property int numberOfNuclearBombs;
+@property int numberOfBombRuns;
 
 @end

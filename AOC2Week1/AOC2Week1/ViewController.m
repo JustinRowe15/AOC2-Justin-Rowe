@@ -20,10 +20,20 @@
 
 - (void)viewDidLoad
 {
-    FighterAircraft * fighterAircraft = [[FighterAircraft alloc] init];
-    if (fighterAircraft != nil)
+    FighterAircraft * fighter = [[FighterAircraft alloc] init];
+    if (fighter != nil)
     {
-        
+        [fighter displayAircraft];
+    }
+    BomberAircraft * bomber = [[BomberAircraft alloc] init];
+    if (bomber != nil)
+    {
+        [bomber displayAircraft];
+    }
+    TankerAircraft * tanker = [[TankerAircraft alloc] init];
+    if (tanker != nil)
+    {
+        [tanker displayAircraft];
     }
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

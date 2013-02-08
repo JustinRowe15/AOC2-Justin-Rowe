@@ -11,8 +11,18 @@
 
 @interface FighterAircraft : AircraftBase
 
-@property int numberOfFighters;
-@property int fighterFlightHours;
-@property NSString * fighterPilotName;
+{
+    int fighterEnum;
+}
+
+typedef enum {
+    F15,
+    F16,
+    A10
+} fighterEnum;
+
+@property int numberOfBulletsFiredPerSecond;
+@property int numberOfBullets;
+@property int fighterType;
 
 @end

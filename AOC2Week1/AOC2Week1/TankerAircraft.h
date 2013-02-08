@@ -11,8 +11,7 @@
 
 @interface TankerAircraft : AircraftBase
 
-@property int numberOfTankers;
-@property int tankerFlightTime;
-@property NSString * tankerPilotName;
+@property int numberOfDistributedFuelGallons;
+@property int numberOfRefuelCycles;
 
 @end

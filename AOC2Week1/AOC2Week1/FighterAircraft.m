@@ -11,13 +11,25 @@
 
 @implementation FighterAircraft
 
+@synthesize numberOfBulletsFiredPerSecond, numberOfBullets, fighterType;
+
 -(id)init
 {
-    if (self = [super init])
+    self = [super init];
+    if (self != nil)
     {
-        [self aircraftAttributes:@"F-16" pilotName:@"Captain Smith" homeBase:@"Falcon Air Base" fuelCapacity:5000];
+        [self setNumberOfBullets:10000];
+        [self setNumberOfBulletsFiredPerSecond:100];
+        [self setFighterType:F15];
     }
     return self;
-}
+};
+
+-(void)displayAircraft
+{
+    [self setNumberOfBullets:(numberOfBullets % numberOfBulletsFiredPerSecond)];
+    [self setPilotName:@"Captain Smith"];
+    NSLog(@"This jet flown by %@ will use all of it's bullets in %d seconds.", self.pilotName, self.numberOfBullets);
+};
 
 @end

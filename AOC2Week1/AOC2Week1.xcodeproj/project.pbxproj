@@ -28,6 +28,7 @@
 		0B6D5C6616C46C8300832E98 /* BomberAircraft.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6D5C6516C46C8300832E98 /* BomberAircraft.m */; };
 		0B6D5C6916C46C9B00832E98 /* TankerAircraft.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6D5C6816C46C9B00832E98 /* TankerAircraft.m */; };
 		0B6D5C6C16C46E2700832E98 /* AircraftBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6D5C6B16C46E2700832E98 /* AircraftBase.m */; };
+		0B6D5C6F16C485CE00832E98 /* AircraftFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6D5C6E16C485CE00832E98 /* AircraftFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		0B6D5C6816C46C9B00832E98 /* TankerAircraft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TankerAircraft.m; sourceTree = "<group>"; };
 		0B6D5C6A16C46E2700832E98 /* AircraftBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AircraftBase.h; sourceTree = "<group>"; };
 		0B6D5C6B16C46E2700832E98 /* AircraftBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AircraftBase.m; sourceTree = "<group>"; };
+		0B6D5C6D16C485CE00832E98 /* AircraftFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AircraftFactory.h; sourceTree = "<group>"; };
+		0B6D5C6E16C485CE00832E98 /* AircraftFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AircraftFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,8 @@
 				0B6D5C6816C46C9B00832E98 /* TankerAircraft.m */,
 				0B6D5C6A16C46E2700832E98 /* AircraftBase.h */,
 				0B6D5C6B16C46E2700832E98 /* AircraftBase.m */,
+				0B6D5C6D16C485CE00832E98 /* AircraftFactory.h */,
+				0B6D5C6E16C485CE00832E98 /* AircraftFactory.m */,
 			);
 			path = AOC2Week1;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				0B6D5C6616C46C8300832E98 /* BomberAircraft.m in Sources */,
 				0B6D5C6916C46C9B00832E98 /* TankerAircraft.m in Sources */,
 				0B6D5C6C16C46E2700832E98 /* AircraftBase.m in Sources */,
+				0B6D5C6F16C485CE00832E98 /* AircraftFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

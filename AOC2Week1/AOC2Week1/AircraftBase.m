@@ -10,12 +10,25 @@
 
 @implementation AircraftBase
 
--(void)aircraftAttributes:(NSString*)type pilotName:(NSString*)name homeBase:(NSString*)base fuelCapacity:(int)fuel;
+@synthesize aircraftType, pilotName, homeBase, fuelCapacity, gallonsUsedPerHour;
+
+-(id)init
 {
-    aircraftType = type;
-    pilotName = name;
-    homeBase = base;
-    fuelCapacity = fuel;
-}
+    self = [super init];
+    if (self != nil)
+    {
+        [self setAircraftType:nil];
+        [self setPilotName:nil];
+        [self setHomeBase:nil];
+        [self setFuelCapacity:nil];
+        [self setGallonsUsedPerHour:nil];
+    }
+    return self;
+};
+
+-(void)displayAircraft
+{
+    NSLog(@"The Type of Aircraft is %@ with a fuel capacity of %d, piloted by %@ and is stationed at %@", aircraftType, fuelCapacity, pilotName, homeBase);
+};
 
 @end

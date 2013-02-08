@@ -11,13 +11,24 @@
 
 @implementation TankerAircraft
 
+@synthesize numberOfDistributedFuelGallons, numberOfRefuelCycles;
+
 -(id)init
 {
-    if (self = [super init])
+    self = [super init];
+    if (self != nil)
     {
-        [self aircraftAttributes:@"KC-10" pilotName:@"Captain Jones" homeBase:@"Hawk Air Base" fuelCapacity:20000];
+        [self setFuelCapacity:80000];
+        [self setNumberOfDistributedFuelGallons:10000];
+        [self setNumberOfRefuelCycles:6];
     }
     return self;
-}
+};
+
+-(void)displayAircraft
+{
+    [self setFuelCapacity:(numberOfDistributedFuelGallons * numberOfRefuelCycles)];
+    NSLog(@"This tanker has the capacity of %d gallons.", self.fuelCapacity);
+};
 
 @end

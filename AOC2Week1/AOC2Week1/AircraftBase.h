@@ -9,13 +9,27 @@
 #import <Foundation/Foundation.h>
 
 @interface AircraftBase : NSObject
+
 {
-    NSString * aircraftType;
-    NSString * pilotName;
-    NSString * homeBase;
-    int fuelCapacity;
+    int aircraftEnum;
 }
 
--(void)aircraftAttributes:(NSString*)type pilotName:(NSString*)name homeBase:(NSString*)base fuelCapacity:(int)fuel;
+typedef enum {
+    FIGHTER,
+    BOMBER,
+    TANKER
+} aircraftEnum;
+
+@property NSString * aircraftType;
+@property NSString * pilotName;
+@property NSString * homeBase;
+@property int fuelCapacity;
+@property int gallonsUsedPerHour;
+
+//initialize
+-(id)init;
+
+//display aircraft information
+-(void)displayAircraft;
 
 @end

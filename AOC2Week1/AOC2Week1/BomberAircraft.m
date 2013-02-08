@@ -11,13 +11,25 @@
 
 @implementation BomberAircraft
 
+@synthesize numberOfClusterBombs, numberOfNuclearBombs, numberOfBombRuns;
+
 -(id)init
 {
-    if (self = [super init])
+    self = [super init];
+    if (self != nil)
     {
-        [self aircraftAttributes:@"B-2" pilotName:@"Captain Johnson" homeBase:@"Eagle Air Base" fuelCapacity:10000];
+        [self setNumberOfClusterBombs:50];
+        [self setNumberOfNuclearBombs:5];
+        [self setNumberOfBombRuns:10];
     }
     return self;
-}
+};
+
+-(void)displayAircraft
+{
+    [self setNumberOfClusterBombs:(numberOfClusterBombs % numberOfBombRuns)];
+    [self setAircraftType:@"B-1"];
+    NSLog(@"The %@ bomber will release %d of bombs per run.", self.aircraftType, self.numberOfClusterBombs);
+};
 
 @end
