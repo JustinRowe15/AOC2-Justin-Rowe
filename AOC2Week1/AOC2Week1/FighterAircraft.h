@@ -21,6 +21,7 @@ typedef enum {
     A10
 } fighterEnum;
 
+//three variables or properties for this fighter class
 @property int numberOfBulletsFiredPerSecond;
 @property int numberOfBullets;
 @property int fighterType;

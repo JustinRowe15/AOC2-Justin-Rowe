@@ -11,8 +11,10 @@
 
 @implementation FighterAircraft
 
+//synthesize properties from fighterAircaft.h file
 @synthesize numberOfBulletsFiredPerSecond, numberOfBullets, fighterType;
 
+//established initial function defining values for each property
 -(id)init
 {
     self = [super init];
@@ -25,6 +27,7 @@
     return self;
 };
 
+//displayAircraft function inherited from the base class 
 -(void)displayAircraft
 {
     [self setNumberOfBullets:(numberOfBullets / numberOfBulletsFiredPerSecond)];

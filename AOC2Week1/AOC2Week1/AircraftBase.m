@@ -10,8 +10,10 @@
 
 @implementation AircraftBase
 
+//synthesize properties from the aircraftBase.h file
 @synthesize aircraftType, pilotName, homeBase, fuelCapacity, gallonsUsedPerHour;
 
+//established initial function defining values for each property
 -(id)init
 {
     self = [super init];

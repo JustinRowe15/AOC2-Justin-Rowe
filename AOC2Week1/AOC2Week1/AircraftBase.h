@@ -14,12 +14,14 @@
     int aircraftEnum;
 }
 
+//custom typedef for three different types of aircraft
 typedef enum {
     FIGHTER,
     BOMBER,
     TANKER
 } aircraftEnum;
 
+//properties to define all aircrafts in the base class
 @property NSString * aircraftType;
 @property NSString * pilotName;
 @property NSString * homeBase;

@@ -11,6 +11,7 @@
 
 @interface BomberAircraft : AircraftBase
 
+//three variables or properties for this bomber class
 @property int numberOfClusterBombs;
 @property int numberOfNuclearBombs;
 @property int numberOfBombRuns;

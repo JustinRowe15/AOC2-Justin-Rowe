@@ -11,6 +11,7 @@
 
 @interface TankerAircraft : AircraftBase
 
+//two variables or properties for this tanker class
 @property int numberOfDistributedFuelGallons;
 @property int numberOfRefuelCycles;
 

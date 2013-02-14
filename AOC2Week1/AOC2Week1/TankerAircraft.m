@@ -11,8 +11,10 @@
 
 @implementation TankerAircraft
 
+//synthesize properties from tankerAircraft.h file
 @synthesize numberOfDistributedFuelGallons, numberOfRefuelCycles;
 
+//established initial function defining values for each property
 -(id)init
 {
     self = [super init];
@@ -25,6 +27,7 @@
     return self;
 };
 
+//displayAircraft function inherited from the base class
 -(void)displayAircraft
 {
     [self setFuelCapacity:(numberOfDistributedFuelGallons * numberOfRefuelCycles)];

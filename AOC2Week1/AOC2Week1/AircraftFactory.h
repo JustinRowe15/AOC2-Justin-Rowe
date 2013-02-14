@@ -14,6 +14,7 @@
 
 @interface AircraftFactory : NSObject
 
+//factory createAircraft function
 +(AircraftBase*)createAircraft: (int)aircraftModel;
 
 @end

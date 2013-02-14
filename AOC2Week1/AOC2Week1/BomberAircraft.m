@@ -11,8 +11,10 @@
 
 @implementation BomberAircraft
 
+//synthesize properties from bomberAircraft.h file
 @synthesize numberOfClusterBombs, numberOfNuclearBombs, numberOfBombRuns;
 
+//established initial function defining values for each property
 -(id)init
 {
     self = [super init];
@@ -25,6 +27,7 @@
     return self;
 };
 
+//displayAircraft function inherited from the base class
 -(void)displayAircraft
 {
     [self setNumberOfClusterBombs:(numberOfClusterBombs / numberOfBombRuns)];
