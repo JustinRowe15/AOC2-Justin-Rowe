@@ -40,6 +40,8 @@
 //Fighter Aircraft Button Action
 - (IBAction)fighterClick:(id)sender;
 {
+    stepperLabel.text = [NSString stringWithFormat:@"Enter Bullet Quantity:"];
+    
     int stepperNumber = stepperButton.value;
     aircraftEntered.text = [NSString stringWithFormat:@"Fighter number of bullets: %d", stepperNumber];
     
@@ -53,6 +55,8 @@
 //Bomber Aircraft Button Action
 - (IBAction)bomberClick:(id)sender;
 {
+    stepperLabel.text = [NSString stringWithFormat:@"Enter Bomb Quantity:"];
+    
     int stepperNumber = stepperButton.value;
     aircraftEntered.text = [NSString stringWithFormat:@"Bomber number of bombs: %d", stepperNumber];
     
@@ -66,6 +70,8 @@
 //Tanker Aircraft Button Action
 - (IBAction)tankerClick:(id)sender;
 {
+    stepperLabel.text = [NSString stringWithFormat:@"Enter Fuel Quantity:"];
+    
     int stepperNumber = stepperButton.value;
     aircraftEntered.text = [NSString stringWithFormat:@"Tanker number of gallons: %d", stepperNumber];
     
@@ -84,18 +90,19 @@
     if (fighterButton.enabled == false)
     {
         aircraftEntered.text = [NSString stringWithFormat:@"Fighter number of bullets: %d", stepperNumber];
+        stepperLabel.text = [NSString stringWithFormat:@"Enter Bullet Quantity: %d", stepperNumber];
     } else if (bomberButton.enabled == false)
     {
         aircraftEntered.text = [NSString stringWithFormat:@"Bomber number of bombs: %d", stepperNumber];
+        stepperLabel.text = [NSString stringWithFormat:@"Enter Bomb Quantity: %d", stepperNumber];
     } else if (tankerButton.enabled == false)
     {
         aircraftEntered.text = [NSString stringWithFormat:@"Tanker number of gallons: %d", stepperNumber];
+        stepperLabel.text = [NSString stringWithFormat:@"Enter Fuel Quantity: %d", stepperNumber];
     } else
     {
         aircraftEntered.text = [NSString stringWithFormat:@"No Aircraft Selected"];
     }
-    
-    stepperLabel.text = [NSString stringWithFormat:@"Change Quantity To: %d", stepperNumber];
 }
 
 //Once the calculate button, execute these calculations depending on which type of Aircraft was chosen
@@ -136,7 +143,7 @@
         if (tanker !=nil)
         {
             [tanker setFuelCapacity:250000];
-            [tanker setNumberOfDistributedFuelGallons:25000];
+            [tanker setNumberOfDistributedFuelGallons:(stepperNumber + tanker.numberOfDistributedFuelGallons)];
             [tanker setNumberOfRefuelCycles:25];
             [tanker displayAircraft];
             
@@ -151,7 +158,8 @@
     if (segmentedControl != nil)
     {
         int selectedChoice = segmentedControl.selectedSegmentIndex;
-        switch (selectedChoice) {
+        switch (selectedChoice)
+        {
             case 0:
                 self.view.backgroundColor = [UIColor blueColor];
                 break;

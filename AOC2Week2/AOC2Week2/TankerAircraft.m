@@ -31,6 +31,7 @@
 -(void)displayAircraft
 {
     [self setFuelCapacity:(numberOfDistributedFuelGallons * numberOfRefuelCycles)];
+    [self setAircraftType:@"KC-135"];
     NSLog(@"This tanker has the capacity of %d gallons.", self.fuelCapacity);
 };
 

@@ -32,6 +32,7 @@
 {
     [self setNumberOfBullets:(numberOfBullets / numberOfBulletsFiredPerSecond)];
     [self setPilotName:@"Captain Smith"];
+    [self setAircraftType:@"F-15"];
     NSLog(@"This jet flown by %@ will use all of it's bullets in %d seconds.", self.pilotName, self.numberOfBullets);
 };
 
