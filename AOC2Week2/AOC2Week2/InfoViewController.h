@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  InfoViewController.h
 //  AOC2Week2
 //
 //  Created by Justin Rowe on 2/14/13.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AircraftFactory.h"
 
-@interface ViewController : UIViewController <UITextFieldDelegate>
+@interface InfoViewController : UIViewController
 
 @end

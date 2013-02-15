@@ -29,6 +29,10 @@
 		0BB94F8B16CDA97C009C0213 /* TankerAircraft.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB94F8A16CDA97C009C0213 /* TankerAircraft.m */; };
 		0BB94F8E16CDA98C009C0213 /* AircraftBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB94F8D16CDA98C009C0213 /* AircraftBase.m */; };
 		0BB94F9116CDA99E009C0213 /* AircraftFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB94F9016CDA99E009C0213 /* AircraftFactory.m */; };
+		0BB94F9316CDAD1B009C0213 /* AircraftViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BB94F9216CDAD1B009C0213 /* AircraftViewViewController.xib */; };
+		0BB94F9616CDADEB009C0213 /* AircraftViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB94F9516CDADEB009C0213 /* AircraftViewViewController.m */; };
+		0BB94F9A16CDB27B009C0213 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB94F9816CDB27B009C0213 /* InfoViewController.m */; };
+		0BB94F9B16CDB27B009C0213 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BB94F9916CDB27B009C0213 /* InfoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,12 @@
 		0BB94F8D16CDA98C009C0213 /* AircraftBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AircraftBase.m; path = ../AircraftBase.m; sourceTree = "<group>"; };
 		0BB94F8F16CDA99E009C0213 /* AircraftFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AircraftFactory.h; path = ../AircraftFactory.h; sourceTree = "<group>"; };
 		0BB94F9016CDA99E009C0213 /* AircraftFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AircraftFactory.m; path = ../AircraftFactory.m; sourceTree = "<group>"; };
+		0BB94F9216CDAD1B009C0213 /* AircraftViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AircraftViewViewController.xib; sourceTree = "<group>"; };
+		0BB94F9416CDADEB009C0213 /* AircraftViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AircraftViewViewController.h; sourceTree = "<group>"; };
+		0BB94F9516CDADEB009C0213 /* AircraftViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AircraftViewViewController.m; sourceTree = "<group>"; };
+		0BB94F9716CDB27B009C0213 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		0BB94F9816CDB27B009C0213 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		0BB94F9916CDB27B009C0213 /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +161,12 @@
 				0BB94F8D16CDA98C009C0213 /* AircraftBase.m */,
 				0BB94F8F16CDA99E009C0213 /* AircraftFactory.h */,
 				0BB94F9016CDA99E009C0213 /* AircraftFactory.m */,
+				0BB94F9716CDB27B009C0213 /* InfoViewController.h */,
+				0BB94F9816CDB27B009C0213 /* InfoViewController.m */,
+				0BB94F9916CDB27B009C0213 /* InfoViewController.xib */,
+				0BB94F9216CDAD1B009C0213 /* AircraftViewViewController.xib */,
+				0BB94F9416CDADEB009C0213 /* AircraftViewViewController.h */,
+				0BB94F9516CDADEB009C0213 /* AircraftViewViewController.m */,
 			);
 			path = AOC2Week2;
 			sourceTree = "<group>";
@@ -265,6 +281,8 @@
 				0BB94F5C16CDA8FC009C0213 /* Default-568h@2x.png in Resources */,
 				0BB94F5F16CDA8FC009C0213 /* MainStoryboard_iPhone.storyboard in Resources */,
 				0BB94F6216CDA8FC009C0213 /* MainStoryboard_iPad.storyboard in Resources */,
+				0BB94F9316CDAD1B009C0213 /* AircraftViewViewController.xib in Resources */,
+				0BB94F9B16CDB27B009C0213 /* InfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +325,8 @@
 				0BB94F8B16CDA97C009C0213 /* TankerAircraft.m in Sources */,
 				0BB94F8E16CDA98C009C0213 /* AircraftBase.m in Sources */,
 				0BB94F9116CDA99E009C0213 /* AircraftFactory.m in Sources */,
+				0BB94F9616CDADEB009C0213 /* AircraftViewViewController.m in Sources */,
+				0BB94F9A16CDB27B009C0213 /* InfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
