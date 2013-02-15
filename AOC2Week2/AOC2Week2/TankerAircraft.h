@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AircraftBase.h"
 
-@interface TankerAircraft : NSObject
+@interface TankerAircraft : AircraftBase
+
+//two variables or properties for this tanker class
+@property int numberOfDistributedFuelGallons;
+@property int numberOfRefuelCycles;
 
 @end

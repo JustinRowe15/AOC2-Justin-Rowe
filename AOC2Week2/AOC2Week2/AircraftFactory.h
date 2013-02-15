@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FighterAircraft.h"
+#import "BomberAircraft.h"
+#import "TankerAircraft.h"
+#import "AircraftBase.h"
 
 @interface AircraftFactory : NSObject
+
+//factory createAircraft function
++(AircraftBase*)createAircraft: (int)aircraftModel;
 
 @end

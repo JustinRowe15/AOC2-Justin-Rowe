@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AircraftBase.h"
 
-@interface BomberAircraft : NSObject
+@interface BomberAircraft : AircraftBase
+
+//three variables or properties for this bomber class
+@property int numberOfClusterBombs;
+@property int numberOfNuclearBombs;
+@property int numberOfBombRuns;
 
 @end

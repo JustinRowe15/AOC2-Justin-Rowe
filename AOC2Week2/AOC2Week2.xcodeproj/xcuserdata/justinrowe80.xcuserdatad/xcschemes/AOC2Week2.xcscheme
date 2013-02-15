@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0BB94F4016CDA8FC009C0213"
+               BlueprintIdentifier = "0BB94FDF16CDBEC6009C0213"
                BuildableName = "AOC2Week2.app"
                BlueprintName = "AOC2Week2"
                ReferencedContainer = "container:AOC2Week2.xcodeproj">
@@ -28,21 +28,11 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0BB94F6A16CDA8FC009C0213"
-               BuildableName = "AOC2Week2Tests.octest"
-               BlueprintName = "AOC2Week2Tests"
-               ReferencedContainer = "container:AOC2Week2.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0BB94F4016CDA8FC009C0213"
+            BlueprintIdentifier = "0BB94FDF16CDBEC6009C0213"
             BuildableName = "AOC2Week2.app"
             BlueprintName = "AOC2Week2"
             ReferencedContainer = "container:AOC2Week2.xcodeproj">
@@ -61,7 +51,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0BB94F4016CDA8FC009C0213"
+            BlueprintIdentifier = "0BB94FDF16CDBEC6009C0213"
             BuildableName = "AOC2Week2.app"
             BlueprintName = "AOC2Week2"
             ReferencedContainer = "container:AOC2Week2.xcodeproj">
@@ -79,7 +69,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0BB94F4016CDA8FC009C0213"
+            BlueprintIdentifier = "0BB94FDF16CDBEC6009C0213"
             BuildableName = "AOC2Week2.app"
             BlueprintName = "AOC2Week2"
             ReferencedContainer = "container:AOC2Week2.xcodeproj">
