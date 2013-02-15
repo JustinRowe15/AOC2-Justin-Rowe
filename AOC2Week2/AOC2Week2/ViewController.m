@@ -27,6 +27,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+//Small info button action.
 - (IBAction)infoClick:(id)sender;
 {
     InfoViewController * infoView = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil];
@@ -36,7 +37,7 @@
     }
 }
 
-//Fighter Click Action
+//Fighter Aircraft Button Action
 - (IBAction)fighterClick:(id)sender;
 {
     int stepperNumber = stepperButton.value;
@@ -49,6 +50,7 @@
     calculateButton.enabled = true;
 }
 
+//Bomber Aircraft Button Action
 - (IBAction)bomberClick:(id)sender;
 {
     int stepperNumber = stepperButton.value;
@@ -61,6 +63,7 @@
     calculateButton.enabled = true;
 }
 
+//Tanker Aircraft Button Action
 - (IBAction)tankerClick:(id)sender;
 {
     int stepperNumber = stepperButton.value;
@@ -73,6 +76,7 @@
     calculateButton.enabled = true;
 }
 
+//What happens when someone increases and decreases the stepper button.
 - (IBAction)stepperClick:(id)sender;
 {
     int stepperNumber = stepperButton.value;
@@ -94,6 +98,7 @@
     stepperLabel.text = [NSString stringWithFormat:@"Change Quantity To: %d", stepperNumber];
 }
 
+//Once the calculate button, execute these calculations depending on which type of Aircraft was chosen
 - (IBAction)calculateClick:(id)sender;
 {
     int stepperNumber = stepperButton.value;
@@ -109,7 +114,7 @@
             [fighter setNumberOfBulletsFiredPerSecond:100];
             [fighter displayAircraft];
             
-            aircraftEntered.text = [NSString stringWithFormat:@"%@ has fired % bullets.", fighter.aircraftType, fighter.numberOfBullets];
+            aircraftEntered.text = [NSString stringWithFormat:@"%@ has fired %d bullets.", fighter.aircraftType, fighter.numberOfBullets];
         };
     } else if (bomberButton.enabled == false)
     {
@@ -136,6 +141,29 @@
             [tanker displayAircraft];
             
             aircraftEntered.text = [NSString stringWithFormat:@"%@ has distributed %d gallons.", tanker.aircraftType, tanker.numberOfDistributedFuelGallons];
+        }
+    }
+}
+
+- (IBAction)segmentClick:(id)sender;
+{
+    UISegmentedControl * segmentedControl = (UISegmentedControl*)sender;
+    if (segmentedControl != nil)
+    {
+        int selectedChoice = segmentedControl.selectedSegmentIndex;
+        switch (selectedChoice) {
+            case 0:
+                self.view.backgroundColor = [UIColor blueColor];
+                break;
+            case 1:
+                self.view.backgroundColor = [UIColor greenColor];
+                break;
+            case 2:
+                self.view.backgroundColor = [UIColor yellowColor];
+                break;
+            default:
+                self.view.backgroundColor = [UIColor whiteColor];
+                break;
         }
     }
 }

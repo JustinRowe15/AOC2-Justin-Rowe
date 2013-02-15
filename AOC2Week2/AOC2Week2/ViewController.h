@@ -20,6 +20,7 @@
     IBOutlet UIButton * calculateButton;
     IBOutlet UIStepper * stepperButton;
     IBOutlet UILabel * stepperLabel;
+    IBOutlet UISegmentedControl * segmentButton;
 }
 
 //Button click action functions
@@ -29,6 +30,7 @@
 - (IBAction)tankerClick:(id)sender;
 - (IBAction)stepperClick:(id)sender;
 - (IBAction)calculateClick:(id)sender;
+- (IBAction)segmentClick:(id)sender;
 
 @property int stepperNumber;
 
