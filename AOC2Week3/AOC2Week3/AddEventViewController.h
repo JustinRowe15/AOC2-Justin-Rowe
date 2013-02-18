@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
 
+//Add Event View Delegate Declaration
 @protocol AddEventViewDelegate <NSObject>
 
 -(void)AddEvent:(NSString *)eventString;
@@ -16,6 +17,8 @@
 @end
 
 @interface AddEventViewController : UIViewController <UITextFieldDelegate, UIPickerViewDelegate>
+
+//Outlets Declared
 {
     id<AddEventViewDelegate> delegate;
     
@@ -25,11 +28,13 @@
     IBOutlet UIDatePicker * eventDatePicker;
 }
 
+//Actions Declared
 - (IBAction)saveEventClick:(id)sender;
 - (IBAction)closeKeyboardClick:(id)sender;
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField;
 
+//Properties Declared
 @property NSString * eventDate;
 @property UIDatePicker * datePicker;
 @property (strong) id<AddEventViewDelegate> delegate;

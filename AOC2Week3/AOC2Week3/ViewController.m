@@ -37,6 +37,7 @@
     }
 }
 
+//Function declared from AddEventViewController To Event Listing Outlet
 -(void)AddEvent:(NSString *)eventString;
 {
     eventListing.text = eventString;
