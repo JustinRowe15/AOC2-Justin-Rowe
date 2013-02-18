@@ -48,7 +48,7 @@
     NSDateFormatter * dateFormat = [[NSDateFormatter alloc]init];
     [dateFormat setDateStyle:NSDateFormatterMediumStyle];
     [dateFormat setTimeStyle:NSDateFormatterShortStyle];
-    eventDate = [NSString stringWithFormat:@"%@", [dateFormat stringFromDate:[datePicker date]]];
+    eventDate = [NSString stringWithFormat:@"%@", [dateFormat stringFromDate:datePicker.date]];
     
     //Event action grabbing date and event description
     NSString * newEvent = [[NSString alloc] initWithFormat:@"New Event: %@, %@", [eventDescriptionTextField text],eventDate];
