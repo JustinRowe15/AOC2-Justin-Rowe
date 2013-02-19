@@ -31,6 +31,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    //Date Picker Information
+    datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 250, 325, 300)];
+    datePicker.date = [NSDate date];
+    datePicker.datePickerMode = UIDatePickerModeDateAndTime;
+    [datePicker addTarget:self action:@selector(saveEventClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:datePicker];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,9 +48,7 @@
 //Save Event Button with Action with both Date and Event Description
 - (IBAction)saveEventClick:(id)sender;
 {
-    //Date Picker Information
-    datePicker = [[UIDatePicker alloc]init];
-    datePicker.date = [NSDate date];
+    //Setting Date Formatter for Date and Time Presentation
     NSDateFormatter * dateFormat = [[NSDateFormatter alloc]init];
     [dateFormat setDateStyle:NSDateFormatterMediumStyle];
     [dateFormat setTimeStyle:NSDateFormatterShortStyle];
