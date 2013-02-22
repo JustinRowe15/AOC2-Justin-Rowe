@@ -9,14 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "AddEventViewController.h"
 
-//Protocol declared for AddEventViewDelegate 
-@protocol AddEventViewDelegate <NSObject>
-
-@required
--(void)AddEvent:(NSString *)eventString;
-
-@end
-
 @interface ViewController : UIViewController <AddEventViewDelegate>
 
 //Main View Outlets Declared

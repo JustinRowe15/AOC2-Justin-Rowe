@@ -7,7 +7,6 @@
 //
 
 #import "AddEventViewController.h"
-#import "ViewController.h"
 
 @interface AddEventViewController ()
 
@@ -34,6 +33,7 @@
     //Date Picker Information
     datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 250, 325, 300)];
     datePicker.date = [NSDate date];
+    [datePicker setMinimumDate:[NSDate date]];
     datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     [datePicker addTarget:self action:@selector(saveEventClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:datePicker];
@@ -56,6 +56,8 @@
     
     //Event action grabbing date and event description
     NSString * newEvent = [[NSString alloc] initWithFormat:@"New Event: %@, %@", [eventDescriptionTextField text],eventDate];
+    //NSString * appendNewEvent = [newEvent stringByAppendingString:newEvent];
+    
     [eventDescriptionTextField resignFirstResponder];
     [self dismissViewControllerAnimated:TRUE completion:nil];
     if (delegate != nil)

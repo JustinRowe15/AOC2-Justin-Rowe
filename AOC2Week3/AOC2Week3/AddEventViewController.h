@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
 
 //Add Event View Delegate Declaration
 @protocol AddEventViewDelegate <NSObject>
