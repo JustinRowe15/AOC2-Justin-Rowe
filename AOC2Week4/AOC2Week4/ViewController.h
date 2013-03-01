@@ -13,14 +13,16 @@
 
 //Main View Outlets Declared
 {
+    NSString * eventState;
     IBOutlet UITextView * eventListing;
-    IBOutlet UIButton * newEventButton;
+    IBOutlet UIButton * saveEventButton;
     IBOutlet UILabel * swipeEventLabel;
     UISwipeGestureRecognizer * rightSwipe;
 }
 
+@property IBOutlet UITextView * savedEvents;
+
 //Event declared for New Event Button
 - (IBAction)saveEventClick:(id)sender;
-- (void)onRightSwipe:(UISwipeGestureRecognizer*)recognizer;
 
 @end

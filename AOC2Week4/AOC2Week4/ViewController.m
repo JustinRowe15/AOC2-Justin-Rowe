@@ -17,6 +17,13 @@
 
 - (void)viewDidLoad
 {
+    NSUserDefaults * defaultScreen = [NSUserDefaults standardUserDefaults];
+    if (defaultScreen != nil)
+    {
+        NSString * eventDisplay = [defaultScreen objectForKey:@"Saved"];
+        self.savedEvents.text = eventDisplay;
+    }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -29,14 +36,15 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onRightSwipe:)];
     rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
     [swipeEventLabel addGestureRecognizer:rightSwipe];
 }
 
--(void)onRightSwipe:(UISwipeGestureRecognizer*)recognizer
+//Right Swipe Label to Move to Second View
+-(void)onRightSwipe:(UISwipeGestureRecognizer*)recognizerRight
 {
-    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight)
+    if (recognizerRight.direction == UISwipeGestureRecognizerDirectionRight)
     {
         AddEventViewController * eventView = [[AddEventViewController alloc] initWithNibName:@"AddEventViewController" bundle:nil];
         {
@@ -46,10 +54,31 @@
     }
 }
 
-//Function declared from AddEventViewController To Event Listing Outlet
+//Function declared from AddEventViewController To Event Listing Outlet With Append If Needed
 -(void)AddEvent:(NSString *)eventString;
 {
+    if (eventState != nil)
+    {
+        eventState = [eventState stringByAppendingString:eventString];
+    } else {
+        eventState = [NSString stringWithFormat:@"%@", eventString];
+    }
+    
     eventListing.text = eventString;
+}
+
+//Save Event Button Action
+- (IBAction)saveEventClick:(id)sender;
+{
+    NSUserDefaults * defaultEvent = [NSUserDefaults standardUserDefaults];
+    if (defaultEvent != nil)
+    {
+        NSString * eventDisplay = self.savedEvents.text;
+        [defaultEvent setObject:eventDisplay forKey:@"Saved"];
+        
+        //Saves The Events
+        [defaultEvent synchronize];
+    }
 }
 
 @end

@@ -46,14 +46,14 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onLeftSwipe:)];
     leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
     [saveEventLabel addGestureRecognizer:leftSwipe];
 }
 
--(void)onLeftSwipe:(UISwipeGestureRecognizer*)recognizer
+-(void)onLeftSwipe:(UISwipeGestureRecognizer*)recognizerLeft
 {
-    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight)
+    if (recognizerLeft.direction == UISwipeGestureRecognizerDirectionLeft)
     {
         //Setting Date Formatter for Date and Time Presentation
         NSDateFormatter * dateFormat = [[NSDateFormatter alloc]init];
@@ -63,8 +63,6 @@
         
         //Event action grabbing date and event description
         NSString * newEvent = [[NSString alloc] initWithFormat:@"New Event: %@, %@", [eventDescriptionTextField text],eventDate];
-        //Stuck on trying to append new events to previously entered ones without clearing the old ones away.
-        //NSString * appendNewEvent = [newEvent stringByAppendingString:newEvent];
         
         [eventDescriptionTextField resignFirstResponder];
         [self dismissViewControllerAnimated:TRUE completion:nil];
