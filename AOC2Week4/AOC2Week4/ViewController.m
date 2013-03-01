@@ -27,13 +27,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-//Click Action To Switch To Add Event View
-- (IBAction)newEventClick:(id)sender;
+- (void)viewWillAppear:(BOOL)animated
 {
-    AddEventViewController * eventView = [[AddEventViewController alloc] initWithNibName:@"AddEventViewController" bundle:nil];
+    rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
+    [swipeEventLabel addGestureRecognizer:rightSwipe];
+}
+
+-(void)onRightSwipe:(UISwipeGestureRecognizer*)recognizer
+{
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight)
     {
-        eventView.delegate = self;
-        [self presentViewController:eventView animated:TRUE completion:nil];
+        AddEventViewController * eventView = [[AddEventViewController alloc] initWithNibName:@"AddEventViewController" bundle:nil];
+        {
+            eventView.delegate = self;
+            [self presentViewController:eventView animated:TRUE completion:nil];
+        }
     }
 }
 

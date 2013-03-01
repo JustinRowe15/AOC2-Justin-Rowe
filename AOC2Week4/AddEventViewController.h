@@ -21,14 +21,15 @@
 {
     id<AddEventViewDelegate> delegate;
     
-    IBOutlet UIButton * saveEventButton;
     IBOutlet UIButton * closeKeyboardButton;
+    IBOutlet UILabel * saveEventLabel;
     IBOutlet UITextField * eventDescriptionTextField;
     IBOutlet UIDatePicker * eventDatePicker;
+    UISwipeGestureRecognizer * leftSwipe;
 }
 
 //Actions Declared
-- (IBAction)saveEventClick:(id)sender;
+- (void)onLeftSwipe:(UISwipeGestureRecognizer*)recognizer;
 - (IBAction)closeKeyboardClick:(id)sender;
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField;

@@ -44,25 +44,34 @@
     // Dispose of any resources that can be recreated.
 }
 
-//Save Event Button with Action with both Date and Event Description
-- (IBAction)saveEventClick:(id)sender;
+- (void)viewWillAppear:(BOOL)animated
 {
-    //Setting Date Formatter for Date and Time Presentation
-    NSDateFormatter * dateFormat = [[NSDateFormatter alloc]init];
-    [dateFormat setDateStyle:NSDateFormatterMediumStyle];
-    [dateFormat setTimeStyle:NSDateFormatterShortStyle];
-    eventDate = [NSString stringWithFormat:@"%@", [dateFormat stringFromDate:datePicker.date]];
-    
-    //Event action grabbing date and event description
-    NSString * newEvent = [[NSString alloc] initWithFormat:@"New Event: %@, %@", [eventDescriptionTextField text],eventDate];
-    //Stuck on trying to append new events to previously entered ones without clearing the old ones away.
-    //NSString * appendNewEvent = [newEvent stringByAppendingString:newEvent];
-    
-    [eventDescriptionTextField resignFirstResponder];
-    [self dismissViewControllerAnimated:TRUE completion:nil];
-    if (delegate != nil)
+    leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
+    [saveEventLabel addGestureRecognizer:leftSwipe];
+}
+
+-(void)onLeftSwipe:(UISwipeGestureRecognizer*)recognizer
+{
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight)
     {
-        [delegate AddEvent:newEvent];
+        //Setting Date Formatter for Date and Time Presentation
+        NSDateFormatter * dateFormat = [[NSDateFormatter alloc]init];
+        [dateFormat setDateStyle:NSDateFormatterMediumStyle];
+        [dateFormat setTimeStyle:NSDateFormatterShortStyle];
+        eventDate = [NSString stringWithFormat:@"%@", [dateFormat stringFromDate:datePicker.date]];
+        
+        //Event action grabbing date and event description
+        NSString * newEvent = [[NSString alloc] initWithFormat:@"New Event: %@, %@", [eventDescriptionTextField text],eventDate];
+        //Stuck on trying to append new events to previously entered ones without clearing the old ones away.
+        //NSString * appendNewEvent = [newEvent stringByAppendingString:newEvent];
+        
+        [eventDescriptionTextField resignFirstResponder];
+        [self dismissViewControllerAnimated:TRUE completion:nil];
+        if (delegate != nil)
+        {
+            [delegate AddEvent:newEvent];
+        }
     }
 }
 

@@ -15,9 +15,12 @@
 {
     IBOutlet UITextView * eventListing;
     IBOutlet UIButton * newEventButton;
+    IBOutlet UILabel * swipeEventLabel;
+    UISwipeGestureRecognizer * rightSwipe;
 }
 
 //Event declared for New Event Button
-- (IBAction)newEventClick:(id)sender;
+- (IBAction)saveEventClick:(id)sender;
+- (void)onRightSwipe:(UISwipeGestureRecognizer*)recognizer;
 
 @end
