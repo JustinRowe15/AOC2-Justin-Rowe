@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AddEventViewController.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,22 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+//Click Action To Switch To Add Event View
+- (IBAction)newEventClick:(id)sender;
+{
+    AddEventViewController * eventView = [[AddEventViewController alloc] initWithNibName:@"AddEventViewController" bundle:nil];
+    {
+        eventView.delegate = self;
+        [self presentViewController:eventView animated:TRUE completion:nil];
+    }
+}
+
+//Function declared from AddEventViewController To Event Listing Outlet
+-(void)AddEvent:(NSString *)eventString;
+{
+    eventListing.text = eventString;
 }
 
 @end

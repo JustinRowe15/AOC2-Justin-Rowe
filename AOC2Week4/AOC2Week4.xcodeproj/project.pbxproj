@@ -18,6 +18,8 @@
 		0B29DD7C16E0271200FF2C4E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B29DD7B16E0271200FF2C4E /* Default-568h@2x.png */; };
 		0B29DD7F16E0271200FF2C4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B29DD7E16E0271200FF2C4E /* ViewController.m */; };
 		0B29DD8216E0271200FF2C4E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B29DD8016E0271200FF2C4E /* ViewController.xib */; };
+		0B29DD8F16E0276E00FF2C4E /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B29DD8D16E0276E00FF2C4E /* AddEventViewController.m */; };
+		0B29DD9016E0276E00FF2C4E /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B29DD8E16E0276E00FF2C4E /* AddEventViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		0B29DD7D16E0271200FF2C4E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0B29DD7E16E0271200FF2C4E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0B29DD8116E0271200FF2C4E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		0B29DD8C16E0276E00FF2C4E /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddEventViewController.h; path = ../AddEventViewController.h; sourceTree = "<group>"; };
+		0B29DD8D16E0276E00FF2C4E /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddEventViewController.m; path = ../AddEventViewController.m; sourceTree = "<group>"; };
+		0B29DD8E16E0276E00FF2C4E /* AddEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddEventViewController.xib; path = ../AddEventViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				0B29DD7E16E0271200FF2C4E /* ViewController.m */,
 				0B29DD8016E0271200FF2C4E /* ViewController.xib */,
 				0B29DD6C16E0271200FF2C4E /* Supporting Files */,
+				0B29DD8C16E0276E00FF2C4E /* AddEventViewController.h */,
+				0B29DD8D16E0276E00FF2C4E /* AddEventViewController.m */,
+				0B29DD8E16E0276E00FF2C4E /* AddEventViewController.xib */,
 			);
 			path = AOC2Week4;
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 				0B29DD7A16E0271200FF2C4E /* Default@2x.png in Resources */,
 				0B29DD7C16E0271200FF2C4E /* Default-568h@2x.png in Resources */,
 				0B29DD8216E0271200FF2C4E /* ViewController.xib in Resources */,
+				0B29DD9016E0276E00FF2C4E /* AddEventViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +185,7 @@
 				0B29DD7216E0271200FF2C4E /* main.m in Sources */,
 				0B29DD7616E0271200FF2C4E /* AppDelegate.m in Sources */,
 				0B29DD7F16E0271200FF2C4E /* ViewController.m in Sources */,
+				0B29DD8F16E0276E00FF2C4E /* AddEventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

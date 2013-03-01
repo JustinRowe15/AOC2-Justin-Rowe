@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddEventViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AddEventViewDelegate>
+
+//Main View Outlets Declared
+{
+    IBOutlet UITextView * eventListing;
+    IBOutlet UIButton * newEventButton;
+}
+
+//Event declared for New Event Button
+- (IBAction)newEventClick:(id)sender;
 
 @end
