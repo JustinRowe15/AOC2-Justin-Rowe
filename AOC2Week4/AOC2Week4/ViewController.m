@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad
 {
+    //Show saved information on home screen
     NSUserDefaults * defaultScreen = [NSUserDefaults standardUserDefaults];
     if (defaultScreen != nil)
     {
@@ -36,6 +37,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    //right swipe gesture recognized to move to second view
     rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onRightSwipe:)];
     rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
     [swipeEventLabel addGestureRecognizer:rightSwipe];

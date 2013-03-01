@@ -46,11 +46,13 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    //left swipe gesture recognized to move to main screen
     leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onLeftSwipe:)];
     leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
     [saveEventLabel addGestureRecognizer:leftSwipe];
 }
 
+//Left swipe to show information entered on the main screen
 -(void)onLeftSwipe:(UISwipeGestureRecognizer*)recognizerLeft
 {
     if (recognizerLeft.direction == UISwipeGestureRecognizerDirectionLeft)
